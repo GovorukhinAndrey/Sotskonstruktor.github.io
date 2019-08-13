@@ -1,0 +1,460 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.header_content
+		h1
+			text-align: center
+	.logo	img
+		width: 150px
+	#causes .title
+		max-width: 370px	
+	#about 
+		.top_about h2
+			margin-top: 10px	
+		.tabs_wrapper 
+			h2
+				margin-bottom: 10px
+			.tabs
+				margin-right: 50px	
+				.active::after
+					width: 30px
+					right: -60px		
+	#partners 
+		.title_wrap
+			padding-left: 30px
+			h2
+				font-size: 40px	
+	#chronicle 
+		.owl-carousel 
+			.owl-video-play-icon::before
+				font-size: 34px
+				top: 7px	
+			.carousel-item .img_wrap 
+				a
+					display: inline
+					&:hover img, &:focus img
+						opacity: 1
+	#contacts 
+		.wrapper	
+			max-width: 440px
+	footer ul
+		max-width: 440px										
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header
+		height: auto
+		&::before
+			display: none
+		.phone
+			color: #242424 
+			padding-top: 27px
+			font-size: 16px
+			a
+				color: #242424
+				&:hover,&:focus
+					color: #242424		
+		.btn
+			font-size: 12px
+			padding: 10px 15px
+			margin-top: 20px
+			color: #242424
+			border-color: #242424
+		.container_top_line
+			position: static
+	.hamburger
+		padding: 30px 29px	
+	.header_content
+		overflow: hidden
+		.left_box 
+			p
+				text-align: center
+		.right_box
+			background-image: url(/img/header_bg2.png)
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			padding-top: 50px
+			padding-bottom: 50px
+			margin-top: 30px
+	.scroll_down
+		position: static
+		display: none
+	.header-flex
+		height: auto
+		display: block		
+	#menu .menu_conainer
+		max-width: 250px	
+	#causes .cause
+		width: 33.3333%
+	#causes .title
+		width: 33.3333%
+	#causes h2
+		font-size: 30px
+		padding-left: 55px
+	#causes h2::before
+		width: 34px
+		top: 26px								
+	#about 
+		.top_about h2
+			margin-top: 30px
+			margin-left: 0
+			text-align: center
+			&::before
+				display: none	
+		.tabs_wrapper 
+			h2	
+				text-align: center
+				&::before
+					display: none
+			.tab_item
+				margin: 30px 60px	
+	#thematic_platform 
+		h2
+			margin-top: 30px	
+	#thematic_platform .infografica
+		margin-bottom: 150px		
+	#Schedule_by_day 
+		.img_box
+			margin: auto
+		.content_box
+			text-align: center	
+	#experts
+		padding-top: 25px 
+		.owl-carousel .owl-dots
+			left: 50%
+			bottom: 0		
+	#partners 
+		.top_partners 
+			.title_wrap
+				h2
+					font-size: 32px
+		.title_wrapper
+			text-align: center
+			width: 100%
+			& > span
+				padding: 0				
+	#chronicle
+		h2::before
+			display: none 
+		.owl-carousel 
+			.owl-nav [class*="owl-"]
+				margin-right: 15px
+		.slide_info
+			padding-left: 15px	
+	#registration 
+		padding-top: 0
+		.man
+			display: none	
+	#map
+		position: static
+		width: 100%
+		height: 300px !important
+	footer ul
+		max-width: 100%			
+	#contacts .wrapper
+		float: left		
+	.region_modal
+		h3
+			text-align: center 
+			font-size: 20px
+		.region_wrap .column
+			width: 100%
+			float: none
+			text-align: center		
+			font-size: 18px	
+	.objWrap
+		display: none												
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	#info
+		.box
+			margin-bottom: 35px
+	.menu_block
+		float: right
+		margin-right: -15px
+	.logo img
+		width: 212px
+	header .phone
+		text-align: center
+	header .btn
+		float: none
+		text-align: center
+		display: block	
+	#menu .menu_conainer
+		float: left
+		margin-left: 30px
+	#causes
+		.cause
+			width: 100%
+			float: none
+			margin-bottom: 25px
+			.cause_content
+				padding-top: 50px
+				padding-bottom: 50px
+		.title
+			width: 100%
+			position: absolute
+			top: -72px
+		h2
+			font-size: 30px
+			padding-left: 55px
+			&::before
+				width: 34px
+				top: 26px		
+		.row_wrap_top
+			margin-bottom: 0
+			padding-top: 100px
+			position: relative			
+	#about 
+		.tabs_wrapper 
+			.tabs
+				margin-bottom: 30px
+			.tab_item
+				margin: 0		
+	#thematic_platform
+		.wrapper
+			padding-left: 0
+		.btn_wrap
+			width: 100%
+			margin: auto 
+			.btn
+				display: block
+				margin: 0
+				margin-bottom: 15px
+				text-align: center
+		ul 
+			padding: 0
+			padding-left: 50px
+	#experts
+		.tab_content 
+			.wrapper > div
+				padding-left: 5px
+				padding-right: 5px
+			.wrapper + .wrapper
+				margin-top: 10px
+			.wrapper
+				margin-left: -5px
+				margin-right: -5px
+	#partners 
+		.top_partners 
+			.title_wrap
+				padding: 0
+				padding-top: 50px
+				padding-bottom: 50px
+				h2
+					text-align: center
+		.main_partner 
+			.triangle 
+				.fa-caret-left
+					display: none
+	#partners .title_wrapper
+		padding-bottom: 40px			
+	#chronicle 
+		h2			
+			font-size: 40px		
+			img
+				width: 100%
+				height: auto
+	#registration
+		h2
+			font-size: 32px	
+			&::before
+				top: 29px
+		h3
+			text-align: center
+			margin-top: 10px
+		.subtitle
+			text-align: center		
+	#contacts
+		h2
+			font-size: 32px	
+			&::before
+				top: 29px				
+	.info_modal
+		padding: 30px 
+		.img_box
+			position: static
+			margin: auto
+			margin-bottom: 15px
+		.modal_content
+			padding-left: 0
+			h3
+				text-align: center
+	.form-horizontal fieldset
+		padding-right: 10px
+		padding-left: 10px	
+	.chronicle_modal
+		padding: 30px									
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.logo img
+		width: 170px
+	.hamburger
+		padding: 25px 24px	
+	.header_content .right_box span.slogan
+		font-size: 38px
+		line-height: 50px
+	.header_content .left_box p
+		font-size: 16px
+	.header_content h1
+		font-size: 16px	
+	#info
+		padding-bottom: 0
+		.box
+			margin-bottom: 45px		
+	#about 
+		.top_about 
+			h2
+				font-size: 22px
+			.box
+				padding-left: 0
+				text-align: center
+				&::before
+					display: none
+		.tabs_wrapper 
+			h2
+				font-size: 22px
+			.tabs
+				margin-right: 0
+				text-align: center
+				li::before
+					display: none
+				.active
+					color: $accent
+					&::after
+						display: none
+	#thematic_platform 
+		h2
+			font-size: 18px
+		ul
+			padding-left: 0
+			li
+				line-height: 25px		
+				margin-bottom: 15px
+				border-bottom: 2px solid transparent
+				&::before
+					left: -14px
+					top: -2px		
+			.active
+				border-bottom: 2px solid $accent	
+		.infografica
+			height: 120px
+			max-width: 120px
+			.item
+				width: 90px
+				height: 90px
+			.item1
+				right: 14px
+				top: -91px
+				&::before
+					left: 35px
+					bottom: -8px
+				&::after
+					background-size: 54px		
+			.item2
+				top: -14px
+				left: -88px
+				&::after
+					background-size: 54px	
+			.item3
+				left: -63px
+				bottom: -58px
+				&::after
+					background-size: 54px	
+				&::before
+					right: 1px
+					top: 6px	
+			.item4
+				right: -62px
+				bottom: -58px
+				&::before
+					left: 1px
+					top: 6px
+				&::after
+					background-size: 54px	
+			.item5
+				right: -88px
+				&::after
+					background-size: 33px																										
+	#Schedule_by_day 
+		.content_box
+			padding: 10px 
+			p
+				font-size: 16px
+				line-height: 24px	
+	#experts .owl-carousel .owl-dots
+		position: relative
+		left: 0
+		bottom: -10px		
+	#partners 
+		.title_wrapper
+			margin-bottom: 15px
+	#chronicle 
+		.owl-carousel 
+			.carousel-item 
+				.video_wrap
+					height: 200px
+				.img_wrap	
+					height: 200px		
+				img
+					height: auto
+					width: 100%
+			.owl-video-play-icon::before
+				font-size: 18px	
+				top: 23px
+			.iframe
+				height: auto !important
+			.owl-nav
+				position: static
+				width: 100% !important				
+		.slide_info		
+			padding: 0
+			padding-left: 15px
+	.form-horizontal
+		padding-left: 15px
+		padding-right: 15px
+	.chronicle_modal
+		padding: 40px	15px 30px				
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	*
+		outline: none !important
+	.form-horizontal .control-label 
+		padding-top: 7px
+		margin-bottom: 0
+		text-align: left
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+	#map
+		position: absolute !important
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
